@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ankit Kumar Soni | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Fira Code', monospace;
+      background-color: #0a0f24;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+    header {
+      position: relative;
+      background-image: url('https://www.stldigital.tech/wp-content/uploads/2023/08/PoV-A-Complete-Guide-to-Cybersecurity-in-the-Modern-World-1024x473.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 6rem 2rem;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+    header .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(10,15,36, 0.7);
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1, header p, header .btn {
+      position: relative;
+      opacity: 0;
+      animation: fadeInText 1.5s forwards;
+    }
+    header h1 {
+      animation-delay: 0.5s;
+      font-size: 3rem;
+    }
+    header p {
+      animation-delay: 0.75s;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    header .btn {
+      animation-delay: 1s;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #0ff;
+      color: #0a0f24;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #00bfff; }
+
+    .container {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-left: 5px solid #0ff;
+      padding-left: 0.5rem;
+      color: #0ff;
+      margin-bottom: 1rem;
+    }
+    section { margin-bottom: 3rem; }
+    ul { padding-left: 1.2rem; }
+    ul li { margin-bottom: 0.6rem; }
+    .job, .cert, .post {
+      background: #11152e;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+    .cert span, .post span { display: block; color: #aaa; font-size: 0.9rem; margin-top: 0.25rem; }
+    footer {
+      background: #11152e;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    .icon-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .icon-grid i {
+      font-size: 2rem;
+      color: #0ff;
+    }
+    @media(max-width: 768px) {
+      header h1 { font-size: 2rem; }
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeInText { to { opacity: 1; } }
+    h3{
+      color:rgb(190, 84, 19);
+    }
+    .profile-section {
+  margin-bottom: 3rem;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top; /* <-- Move the image down inside the circle */
+  border: 3px solid #0ff;
+}
+
+
+.profile-content {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-content h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #0ff;
+}
+
+.profile-content p {
+  margin-top: 0.8rem;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="overlay"></div>
+    <h1>Ankit Kumar Soni</h1>
+    <p>Penetration Tester (CEH) </p>
+    <p>
+  <i class="fas fa-phone"></i> +91-7318506153 &nbsp; | &nbsp;
+  <i class="fas fa-envelope"></i> ankitsoni6153@gmail.com &nbsp; | &nbsp;
+  <i class="fas fa-map-marker-alt"></i> Noida, UP &nbsp; | &nbsp;
+  <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/ankit-k-soni" target="_blank" style="color: #0ff; text-decoration: none;">ankit-k-soni</a>
+  <br>
+  <a href="mailto:ankitsoni6153@gmail.com" class="btn">Contact Me</a>
+  <a href="Resume_Ankit_Soni - updated.pdf" class="btn">Resume</a>
+</p>
+
+  </header>
+
+  <main class="container">
+   <section class="profile-section">
+  <div class="profile-container">
+    <div class="profile-image">
+      <img src="ankitpic.jpg" alt="Ankit Kumar Soni">
+    </div>
+    <div class="profile-content">
+      <h2><span>👨‍💻</span> Profile</h2>
+      <p>
+        Cybersecurity professional with 2 years of experience in Penetration Testing across web applications,
+        infrastructure, APIs, and Android. Leading CERT-In empanelment exams, managing VA/PT Practical Skill Tests.
+        Proficient in tools like Burp Suite, NMAP, Nessus, and SQLMap. Focused on continuous learning and achieving
+        security excellence.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+    <section>
+      <h2>🏆 Achievements</h2>
+      <ul>
+        <li>Recognized by NASA under their Vulnerability Disclosure Program (VDP) 
+Acknowledged by the National Aeronautics and Space Administration (NASA) for responsibly identifying and 
+reporting a previously unknown vulnerability, contributing to the security of NASA's digital assets. Received an 
+official appreciation letter from NASA’s Senior Agency Information Security Officer (SAISO).</li>
+      </ul>
+    </section>
+<section>
+  <h2>📄 NASA VDP Appreciation Letter</h2>
+  <p>You can view or scroll the PDF here:</p>
+  <object
+    id="nasa-vdp-pdf"
+    data="VDP20of20-20Signed.pdf"
+    type="application/pdf"
+    width="100%"
+    height="600px">
+    <p>
+      Your browser does not support PDFs.
+      <a href="VDP20of20-20Signed.pdf">Download the PDF</a>.
+    </p>
+  </object>
+</section>
+
+
+    <section>
+      <h2>💼 Professional Experience</h2>
+      <div class="job">
+        <h3>VAPT Consultant – Dievas Technologies Pvt. Ltd (Noida, 08/2025 – Present)</h3>
+        <ul>
+          <li>Conducted manual and automated Vulnerability Assessments and Penetration Testing (VA/PT) for 
+multiple client web applications, ensuring comprehensive security coverage and timely delivery. </li>
+          <li>Performed internal penetration testing on in-house applications and network infrastructure to uncover 
+and address internal security flaws.</li>
+          <li>Collaborated closely with client engineering and security teams to validate findings, implement fixes, 
+and strengthen the security posture.</li>
+          <li>Delivered detailed technical reports highlighting vulnerabilities, risk ratings (Critical, High, Medium, 
+Low), proof-of-concept (PoC), and actionable remediation steps. </li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>VAPT Specialist – Dievas Technologies Pvt. Ltd (Noida, 10/2024 – 08/2025)</h3>
+        <ul>
+          <li>Team Lead CERT-In empanelment: Vulnerability Assessment/Penetration Testing Practical Skill 
+ensuring successful identification, exploitation, and reporting of vulnerabilities. </li>
+          <li>Managed a team for Offline Practical Skill Test (OFFPST) and Offensive Live Penetration Security Testing 
+(OLPST), conducting real-time attack simulations and vulnerability exploitation. </li>
+          <li>Proficient in understanding application-level vulnerabilities like XSS, SQL Injection, CSRF, authentication 
+bypass, cryptographic attacks, authentication flaws, etc. </li>
+<li>Skilled using Burp Suite, Gobuster, NMAP, Dirbuster, Nessus, and SQLMap for web application penetration 
+tests and infrastructure testing. </li>
+<li>Identifying the critical, High, Medium, and Low vulnerabilities in the applications based on OWASP Top 10 and 
+prioritizing them based on their criticality.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Cyber Security Analyst – Riskberg Consulting Pvt. Ltd (Gurgaon, 09/2023 – 08/2024)</h3>
+        <ul>
+          <li>Conducted manual and automated VA & PT for multiple clients’ web applications, ensuring thorough testing 
+and timely reporting.</li>
+          <li>Managed VA & PT processes on-site for one client overseeing all aspects of testing and client communication. </li>
+          <li>Executed internal penetration tests on clients’ in-house applications to identify and address security 
+vulnerabilities within their internal network.</li>
+<li> Provided necessary evidence and documentation to fulfill auditor requirements related to VAPT.</li>
+<li>Generated detailed reports for each task performed, outlining vulnerabilities discovered and recommendations 
+for remediation.</li>
+<li>
+  Proficient in understanding application-level vulnerabilities like XSS, SQL Injection, CSRF, authentication 
+bypass, cryptographic attacks, authentication flaws, etc. 
+</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>🎓 Education</h2>
+      <ul>
+        <li><strong>M.C.A</strong> – Lovely Professional University (2021–2023)</li>
+        <li><strong>B.C.A</strong> – University of Lucknow  (2018–2021)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📜 Certifications</h2>
+      <div class="cert"><strong>Certified Ethical Hacker (Practical)</strong><span>ID: ECC2386741059 · Valid: Apr 2024 – Apr 2027</span></div>
+      <section>
+  <h2>📄 Certified Ethical Hacker (Practical)</h2>
+  <p>You can view or scroll the PDF here:</p>
+  <object
+    id="nasa-vdp-pdf"
+    data="cehPratical.pdf"
+    type="application/pdf"
+    width="100%"
+    height="600px">
+    <p>
+      Your browser does not support PDFs.
+      <a href="cehPratical.pdf">Download the PDF</a>.
+    </p>
+  </object>
+</section>
+      
+       <section>
+      <div class="cert"><strong>CCNA - Cisco Certified Network Associate</strong><span>ID: CSCO14953614 · Valid: Jul 2025 – Jul 2028</span></div>
+      <section>
+  <h2>📄 CCNA - Cisco Certified Network Associate</h2>
+  <p>You can view or scroll the PDF here:</p>
+  <object
+    id="nasa-vdp-pdf"
+    data="ccna.pdf"
+    type="application/pdf"
+    width="100%"
+    height="600px">
+    <p>
+      Your browser does not support PDFs.
+      <a href="ccna.pdf">Download the PDF</a>.
+    </p>
+  </object>
+</section>
+     
+</section>
+
+    <section>
+      <h2>🛠️ Skills</h2>
+      <ul>
+        <li><strong>Vulnerability Assessment & Penetration Testing: </strong>Web Applications, Mobile Applications, APIs, Network Infrastructure</li>
+        <li><strong>Tools:</strong> Nessus, Burp Suite, Acunetix, Nmap, Gobuster, SQLMap</li>
+        <li><strong>Standards:</strong> OWASP Top 10, CVSS, PoC Reporting, Auditor Evidence</li>
+        <li><strong>Soft Skills:</strong> Presentation, Problem Solving, Teamwork, Adaptability</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ankit Kumar Soni</p>
+  </footer>
+
+  <script>
+    const title = document.querySelector('header h1');
+    const text = title.textContent;
+    title.textContent = '';
+    let index = 0;
+    function typeWriter() {
+      if (index < text.length) {
+        title.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 80);
+      }
+    }
+    document.addEventListener('DOMContentLoaded', typeWriter);
+  </script>
+</body>
+</html>

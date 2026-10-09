@@ -11,6 +11,69 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <style>
+    /* Tools & Standards */
+.tools-section {
+    margin-bottom: 3rem;
+}
+
+.tools-section h2 {
+    border-left: 5px solid #00ffff;
+    padding-left: 0.75rem;
+    color: #00ffff;
+    margin-bottom: 1.5rem;
+}
+
+.tools-category {
+    background: #0d1727;
+    border: 1px solid #26364b;
+    border-radius: 14px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.tools-category h3 {
+    color: #e6f0ff;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.tool-tag {
+    display: inline-flex;
+    align-items: center;
+    background: #17263a;
+    color: #d9e9ff;
+    border: 1px solid #30435b;
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    transition: background 0.25s ease,
+                border-color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.tool-tag:hover {
+    background: #203751;
+    border-color: #00ffff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .tools-category {
+        padding: 1rem;
+    }
+
+    .tool-tag {
+        font-size: 0.82rem;
+        padding: 0.5rem 0.65rem;
+    }
+}
     :root{--bg:#080d19;--panel:#101827;--panel2:#121e30;--text:#edf4ff;--muted:#9eacc1;--accent:#65f0c2;--blue:#7aa8ff;--border:rgba(173,196,226,.14);--max:1120px}
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;scroll-padding-top:90px}
@@ -79,11 +142,47 @@
         <article class="card"><div class="icon-box"><i class="fa-solid fa-code"></i></div><h3>API security</h3><p>Access control and object-level authorization, authentication flows, input handling, business logic, and API security control validation.</p></article>
         <article class="card"><div class="icon-box"><i class="fa-solid fa-network-wired"></i></div><h3>Network &amp; infrastructure</h3><p>Internal and external assessments, service exposure, vulnerability validation, firewall rules, network segmentation, and privilege escalation scenarios.</p></article>
         <article class="card"><div class="icon-box"><i class="fa-brands fa-android"></i></div><h3>Android security</h3><p>Android application testing, runtime analysis, Frida-based instrumentation, root-detection assessment, and application security control review.</p></article>
-        <article class="card"><div class="icon-box"><i class="fa-solid fa-industry"></i></div><h3>OT/IT &amp; ICS environments</h3><p>Security assessment exposure across OT-integrated systems, enterprise networks, segmentation controls, and OT/SCADA security fundamentals.</p></article>
-        <article class="card"><div class="icon-box"><i class="fa-solid fa-clipboard-check"></i></div><h3>Risk &amp; remediation</h3><p>CVSS-based prioritization, PoC evidence, audit-ready reporting, remediation recommendations, revalidation, and retesting.</p></article>
-      </div>
-      <div class="card" style="margin-top:16px"><h3>Tools &amp; standards</h3><div class="skills"><span class="skill">Burp Suite</span><span class="skill">Nmap</span><span class="skill">Tenable Nessus</span><span class="skill">SQLMap</span><span class="skill">Gobuster</span><span class="skill">Dirsearch</span><span class="skill">Acunetix</span><span class="skill">Frida</span><span class="skill">OWASP Top 10</span><span class="skill">CVSS</span><span class="skill">CERT-In-aligned reporting</span><span class="skill">PoC development</span></div></div>
-    </div></section>
+          </div>
+     <!-- Tools & Standards Section -->
+<section id="tools-standards" class="tools-section">
+    <h2>🛠️ Tools &amp; Standards</h2>
+
+    <!-- Penetration Testing Tools -->
+    <div class="tools-category">
+        <h3>Penetration Testing Tools</h3>
+        <div class="tools-grid">
+            <span class="tool-tag">Burp Suite</span>
+            <span class="tool-tag">Nmap</span>
+            <span class="tool-tag">Tenable Nessus</span>
+            <span class="tool-tag">SQLMap</span>
+            <span class="tool-tag">Gobuster</span>
+            <span class="tool-tag">Dirsearch</span>
+            <span class="tool-tag">Acunetix</span>
+            <span class="tool-tag">Frida</span>
+        </div>
+    </div>
+
+    <!-- Frameworks and Risk Assessment -->
+    <div class="tools-category">
+        <h3>Frameworks &amp; Risk Assessment</h3>
+        <div class="tools-grid">
+            <span class="tool-tag">OWASP Top 10</span>
+            <span class="tool-tag">CVSS</span>
+        </div>
+    </div>
+
+    <!-- Reporting and Deliverables -->
+    <div class="tools-category">
+        <h3>Reporting &amp; Deliverables</h3>
+        <div class="tools-grid">
+            <span class="tool-tag">CERT-In-Aligned VAPT Reporting</span>
+            <span class="tool-tag">PoC Development</span>
+            <span class="tool-tag">Vulnerability Validation</span>
+            <span class="tool-tag">Remediation Recommendations</span>
+            <span class="tool-tag">Re-testing</span>
+        </div>
+    </div>
+</section>
 
     <section id="experience"><div class="wrap">
       <div class="section-head"><div><div class="section-kicker">Career</div><h2>Professional experience</h2></div><p>Progressive experience in vulnerability assessment, penetration testing, client coordination, and remediation support.</p></div>
@@ -121,9 +220,8 @@
       <div class="grid two">
         <article class="card cert-card"><div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div><div><h3>Certified Ethical Hacker (Practical)</h3><p>EC-Council</p><div class="meta">Apr 2024 – Apr 2027 · Credential ID: ECC2386741059</div><div class="actions"><a class="btn secondary" href="cehPratical.pdf" target="_blank" rel="noopener">View certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></article>
         <article class="card cert-card"><div class="icon-box"><i class="fa-solid fa-network-wired"></i></div><div><h3>CCNA — Cisco Certified Network Associate</h3><p>Cisco</p><div class="meta">Jul 2025 – Jul 2028 · Credential ID: CSCO14953614</div><div class="actions"><a class="btn secondary" href="ccna.pdf" target="_blank" rel="noopener">View certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></article>
-        <article class="card cert-card"><div class="icon-box"><i class="fa-solid fa-lock"></i></div><div><h3>Certified Network Security Practitioner (CNSP)</h3><p>The SecOps Group</p><div class="meta">Issued Jun 2024 · Credential ID: 8813850</div></div></article>
-        <article class="card cert-card"><div class="icon-box"><i class="fa-solid fa-microchip"></i></div><div><h3>Additional professional development</h3><p>OT/ICS cybersecurity fundamentals, SCADA security concepts, and practical cybersecurity labs.</p><div class="meta">Include additional credentials only when you want to publish the supporting certificate details.</div></div></article>
-      </div>
+        <article class="card cert-card"><div class="icon-box"><i class="fa-solid fa-lock"></i></div><div><h3>Certified Network Security Practitioner (CNSP)</h3><p>The SecOps Group</p><div class="meta">Issued Jun 2024 · Credential ID: 8813850</div><div class="actions"><a class="btn secondary" href="cnsp.jpeg" target="_blank" rel="noopener">View certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></article>
+       </div>
     </div></section>
 
     <section id="education"><div class="wrap">

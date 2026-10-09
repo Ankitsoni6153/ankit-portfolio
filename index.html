@@ -2,347 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ankit Kumar Soni | Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cybersecurity portfolio of Ankit Kumar Soni, VAPT Consultant and Penetration Tester specializing in web, API, network, Android, and OT/IT security." />
+  <meta name="theme-color" content="#080d19" />
+  <title>Ankit Kumar Soni | VAPT Consultant & Penetration Tester</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Fira Code', monospace;
-      background-color: #0a0f24;
-      color: #f1f1f1;
-      line-height: 1.6;
-    }
-    header {
-      position: relative;
-      background-image: url('https://www.stldigital.tech/wp-content/uploads/2023/08/PoV-A-Complete-Guide-to-Cybersecurity-in-the-Modern-World-1024x473.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 6rem 2rem;
-      text-align: center;
-      color: white;
-      overflow: hidden;
-    }
-    header .overlay {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(10,15,36, 0.7);
-      animation: fadeIn 2s ease-in-out;
-    }
-    header h1, header p, header .btn {
-      position: relative;
-      opacity: 0;
-      animation: fadeInText 1.5s forwards;
-    }
-    header h1 {
-      animation-delay: 0.5s;
-      font-size: 3rem;
-    }
-    header p {
-      animation-delay: 0.75s;
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    header .btn {
-      animation-delay: 1s;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      background: #0ff;
-      color: #0a0f24;
-      font-weight: bold;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .btn:hover { background: #00bfff; }
-
-    .container {
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-    h2 {
-      border-left: 5px solid #0ff;
-      padding-left: 0.5rem;
-      color: #0ff;
-      margin-bottom: 1rem;
-    }
-    section { margin-bottom: 3rem; }
-    ul { padding-left: 1.2rem; }
-    ul li { margin-bottom: 0.6rem; }
-    .job, .cert, .post {
-      background: #11152e;
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 1.5rem;
-    }
-    .cert span, .post span { display: block; color: #aaa; font-size: 0.9rem; margin-top: 0.25rem; }
-    footer {
-      background: #11152e;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
-    .icon-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .icon-grid i {
-      font-size: 2rem;
-      color: #0ff;
-    }
-    @media(max-width: 768px) {
-      header h1 { font-size: 2rem; }
-    }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes fadeInText { to { opacity: 1; } }
-    h3{
-      color:rgb(190, 84, 19);
-    }
-    .profile-section {
-  margin-bottom: 3rem;
-}
-
-.profile-container {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.profile-image img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center top; /* <-- Move the image down inside the circle */
-  border: 3px solid #0ff;
-}
-
-
-.profile-content {
-  flex: 1;
-  min-width: 250px;
-}
-
-.profile-content h2 {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #0ff;
-}
-
-.profile-content p {
-  margin-top: 0.8rem;
-}
-
+    :root{--bg:#080d19;--panel:#101827;--panel2:#121e30;--text:#edf4ff;--muted:#9eacc1;--accent:#65f0c2;--blue:#7aa8ff;--border:rgba(173,196,226,.14);--max:1120px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{font-family:'DM Sans',sans-serif;background:radial-gradient(ellipse at 80% 0%,rgba(54,100,157,.18),transparent 38%),var(--bg);color:var(--text);line-height:1.7}
+    a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(8,13,25,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+    .nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-.04em;font-size:1.05rem}.brand span{color:var(--accent)}
+    .nav-links{display:flex;gap:24px;align-items:center;color:var(--muted);font-size:.9rem}.nav-links a:hover{color:var(--accent)}
+    .hero{padding:92px 0 76px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:390px;height:390px;border:1px solid rgba(101,240,194,.12);border-radius:50%;right:-140px;top:10px;box-shadow:0 0 0 45px rgba(101,240,194,.025),0 0 0 90px rgba(101,240,194,.018);pointer-events:none}
+    .eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:700;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:26px;height:1px;background:var(--accent)}
+    h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.2;letter-spacing:-.035em}h1{font-size:clamp(2.7rem,7vw,5.2rem);max-width:850px;margin:20px 0 16px}h1 .highlight{color:var(--accent)}
+    .hero-subtitle{font-size:clamp(1.05rem,2vw,1.3rem);color:#c4d1e4;max-width:800px}.hero-copy{color:var(--muted);max-width:720px;margin-top:17px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 17px;border-radius:9px;font-weight:700;font-size:.93rem;border:1px solid var(--border);transition:transform .2s,border-color .2s}.btn:hover{transform:translateY(-2px);border-color:var(--accent)}.btn.primary{background:var(--accent);color:#07131a;border-color:var(--accent)}.btn.secondary{background:rgba(255,255,255,.025)}
+    .quick-facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}.pill{border:1px solid var(--border);background:rgba(255,255,255,.025);color:#c4d1e4;padding:7px 11px;border-radius:999px;font-size:.82rem}.pill i{color:var(--accent);margin-right:7px}
+    section{padding:54px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:25px}.section-kicker{font-size:.76rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:700}.section-head h2{font-size:clamp(1.8rem,4vw,2.55rem);margin-top:6px}.section-head p{max-width:510px;color:var(--muted);font-size:.95rem}
+    .grid{display:grid;gap:16px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .card{padding:23px;border:1px solid var(--border);border-radius:16px;background:linear-gradient(145deg,rgba(18,30,48,.92),rgba(13,21,35,.92));min-width:0}.card h3{font-size:1.12rem;margin-bottom:10px}.card p{color:var(--muted);font-size:.94rem}.icon-box{width:43px;height:43px;display:grid;place-items:center;border-radius:12px;color:var(--accent);background:rgba(101,240,194,.09);border:1px solid rgba(101,240,194,.15);margin-bottom:17px;font-size:1.1rem}
+    .timeline{display:grid;gap:17px}.role{position:relative;padding:24px 25px 23px 29px;border:1px solid var(--border);border-radius:16px;background:rgba(16,24,39,.8)}.role:before{content:"";position:absolute;left:0;top:25px;bottom:25px;width:3px;background:var(--accent);border-radius:3px}.role-top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;flex-wrap:wrap}.role h3{font-size:1.18rem}.company{color:var(--accent);font-weight:600;margin-top:5px}.date{font-size:.82rem;color:#c0cde0;border:1px solid var(--border);padding:5px 9px;border-radius:999px;white-space:nowrap}.role ul{padding-left:19px;margin-top:15px;color:var(--muted)}.role li{padding-left:3px;margin:7px 0}.role li::marker{color:var(--accent)}
+    .skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}.skill{font-size:.84rem;color:#d6e2f3;background:#172438;border:1px solid var(--border);padding:7px 10px;border-radius:8px}
+    .achievement{display:flex;gap:18px;align-items:flex-start}.achievement .icon-box{flex:0 0 43px}.achievement strong{color:var(--text)}
+    .cert-card{display:flex;gap:14px;align-items:flex-start}.cert-card .icon-box{flex:0 0 43px;margin:0}.cert-card p{font-size:.9rem}.cert-card .meta{font-size:.81rem;color:#8495ad;margin-top:5px}
+    .education-item{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.education-item+.education-item{border-top:1px solid var(--border);padding-top:18px;margin-top:18px}.education-item p{color:var(--muted);font-size:.9rem}.year{color:var(--accent);font-size:.85rem;white-space:nowrap}
+    .contact-panel{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:30px;border:1px solid rgba(101,240,194,.22);border-radius:18px;background:linear-gradient(110deg,rgba(101,240,194,.08),rgba(122,168,255,.06))}.contact-panel p{color:var(--muted);margin-top:8px}.contact-links{display:flex;flex-wrap:wrap;gap:10px}
+    footer{border-top:1px solid var(--border);padding:25px 0;color:#8291a8;font-size:.85rem}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.socials{display:flex;gap:16px}.socials a:hover{color:var(--accent)}
+    @media(max-width:800px){.nav-links{gap:13px;font-size:.82rem}.grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head{display:block}.section-head p{margin-top:10px}.contact-panel{align-items:flex-start;flex-direction:column}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,var(--max))}.nav-inner{height:auto;min-height:64px;align-items:flex-start;padding:15px 0;flex-direction:column}.nav-links{width:100%;overflow-x:auto;padding-bottom:2px}.hero{padding:64px 0 45px}.grid.two,.grid.three{grid-template-columns:1fr}.role{padding:20px 17px 20px 22px}.role-top{display:block}.date{display:inline-block;margin-top:10px}.contact-panel{padding:22px}.actions .btn{flex:1 1 auto}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="overlay"></div>
-    <h1>Ankit Kumar Soni</h1>
-    <p>Penetration Tester (CEH) </p>
-    <p>
-  <i class="fas fa-phone"></i> +91-7318506153 &nbsp; | &nbsp;
-  <i class="fas fa-envelope"></i> ankitsoni6153@gmail.com &nbsp; | &nbsp;
-  <i class="fas fa-map-marker-alt"></i> Noida, UP &nbsp; | &nbsp;
-  <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/ankit-k-soni" target="_blank" style="color: #0ff; text-decoration: none;">ankit-k-soni</a>
-  <br>
-  <a href="mailto:ankitsoni6153@gmail.com" class="btn">Contact Me</a>
-  <a href="Resume_Ankit_Soni.pdf" class="btn">Resume</a>
-</p>
+  <nav class="nav" aria-label="Main navigation"><div class="wrap nav-inner">
+    <a class="brand" href="#home">AKS<span>.</span></a>
+    <div class="nav-links"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#certifications">Certifications</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+  </div></nav>
 
-  </header>
-
-  <main class="container">
-   <section class="profile-section">
-  <div class="profile-container">
-    <div class="profile-image">
-      <img src="ankitpic.jpeg" alt="Ankit Kumar Soni">
+  <header class="hero" id="home"><div class="wrap">
+    <div class="eyebrow">Cybersecurity · Offensive Security</div>
+    <h1>Ankit Kumar Soni<br><span class="highlight">VAPT Consultant</span> &amp; Penetration Tester</h1>
+    <p class="hero-subtitle">Web Application · API · Network · Android · OT/IT Security</p>
+    <p class="hero-copy">Cybersecurity professional with 3 years of hands-on experience assessing applications and infrastructure, manually validating vulnerabilities, demonstrating security impact, and helping technical teams remediate risk. Recognized by NASA through its Vulnerability Disclosure Program.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:ankitsoni6153@gmail.com"><i class="fa-regular fa-envelope"></i> Contact me</a>
+      <a class="btn secondary" href="Resume_Ankit_Soni.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> View resume</a>
+      <a class="btn secondary" href="https://linkedin.com/in/ankit-k-soni" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
     </div>
-    <div class="profile-content">
-      <h2><span>👨‍💻</span> Profile</h2>
-      <p>
-        Cybersecurity professional with 2 + year of experience in Penetration Testing across web applications,
-        infrastructure, APIs, and Android. Leading CERT-In empanelment exams, managing VA/PT Practical Skill Tests.
-        Proficient in tools like Burp Suite, NMAP, Nessus, and SQLMap. Focused on continuous learning and achieving
-        security excellence.
-      </p>
-    </div>
-  </div>
-</section>
+    <div class="quick-facts"><span class="pill"><i class="fa-solid fa-location-dot"></i>Noida, India</span><span class="pill"><i class="fa-solid fa-shield-halved"></i>CEH Practical</span><span class="pill"><i class="fa-solid fa-award"></i>NASA VDP Recognition</span><span class="pill"><i class="fa-solid fa-network-wired"></i>Web, API, Network &amp; OT/IT</span></div>
+  </div></header>
 
-
-
-    <section>
-      <h2>🏆 Achievements</h2>
-      <ul>
-        <li>Recognized by NASA under their Vulnerability Disclosure Program (VDP) 
-Acknowledged by the National Aeronautics and Space Administration (NASA) for responsibly identifying and 
-reporting a previously unknown vulnerability, contributing to the security of NASA's digital assets. Received an 
-official appreciation letter from NASA’s Senior Agency Information Security Officer (SAISO).</li>
-      </ul>
-    </section>
-<section>
-  <h2>📄 NASA VDP Appreciation Letter</h2>
-  <p>You can view or scroll the PDF here:</p>
-  <object
-    id="nasa-vdp-pdf"
-    data="VDP20of20-20Signed.pdf"
-    type="application/pdf"
-    width="100%"
-    height="600px">
-    <p>
-      Your browser does not support PDFs.
-      <a href="VDP20of20-20Signed.pdf">Download the PDF</a>.
-    </p>
-  </object>
-</section>
-
-
-    <section>
-      <h2>💼 Professional Experience</h2>
-      <div class="job">
-        <h3>VAPT Consultant – Dievas Technologies Pvt. Ltd (Noida, 08/2025 – Present)</h3>
-        <ul>
-          <li>Led CERT-In VAPT empanelment initiatives as Team Lead, overseeing VA/PT Practical Skill Tests and ensuring 
-effective vulnerability identification, exploitation, and audit-ready reporting.  </li>
-          <li>Led end-to-end Vulnerability Assessment & Penetration Testing (VAPT) across web applications, APIs, internal 
-infrastructure, and OT-integrated systems, identifying critical attack paths and security weaknesses.  </li>
-          <li>Performed advanced manual exploitation of OWASP Top 10 and infrastructure vulnerabilities (XSS, SQLi, IDOR, 
-authentication bypass, misconfigurations), validating findings beyond automated scans. </li>
-          <li>Executed network and internal penetration testing, including firewall rule review, segmentation validation, 
-credential abuse, and privilege escalation scenarios within enterprise and OT-connected environments.   </li>
-          <li>Delivered audit-ready technical reports with CVSS-based risk ratings, proof-of-concept (PoC) evidence, attack 
-impact analysis, and clear remediation guidance aligned with CERT-In and industry standards.  </li>
-          <li>Coordinating with clients, internal teams, and external stakeholders to validate fixes, 
-support re-testing, and ensure timely closure of high-risk vulnerabilities. </li>
-        </ul>
+  <main>
+    <section id="about"><div class="wrap">
+      <div class="section-head"><div><div class="section-kicker">Profile</div><h2>Security testing with practical impact</h2></div><p>Focused on finding, validating, prioritizing, and communicating security weaknesses—not simply reporting scanner output.</p></div>
+      <div class="grid two">
+        <article class="card"><div class="icon-box"><i class="fa-solid fa-crosshairs"></i></div><h3>Hands-on security assessment</h3><p>Experience with manual and automated VAPT across web applications, APIs, internal networks, infrastructure, Android applications, and OT/IT-connected environments.</p></article>
+        <article class="card"><div class="icon-box"><i class="fa-solid fa-file-circle-check"></i></div><h3>Evidence-led reporting</h3><p>Documenting reproducible proof of concept, CVSS-based severity, business and technical impact, remediation guidance, and retest outcomes for stakeholders.</p></article>
+        <article class="card"><div class="icon-box"><i class="fa-solid fa-people-arrows-left-right"></i></div><h3>Engagement coordination</h3><p>Coordinating with clients, technical teams, and stakeholders; supporting practical testing engagements, remediation validation, and timely closure of high-risk findings.</p></article>
+        <article class="card"><div class="icon-box"><i class="fa-solid fa-medal"></i></div><h3>NASA VDP recognition</h3><p>Received an official appreciation letter after responsibly reporting a previously unknown vulnerability through NASA’s Vulnerability Disclosure Program.</p></article>
       </div>
-      <div class="job">
-        <h3>VAPT Specialist – Dievas Technologies Pvt. Ltd (Noida, 10/2024 – 08/2025)</h3>
-        <ul>
-          <li> Conducted manual and automated Vulnerability Assessment & Penetration Testing on web applications, 
-delivering comprehensive security coverage within defined timelines.  </li>
-          <li> Identified and exploited critical application-layer vulnerabilities including XSS, SQL Injection, CSRF, 
-authentication bypass, cryptographic weaknesses, and access control flaws.  </li>
-          <li>Proficient in understanding application-level vulnerabilities like XSS, SQL Injection, CSRF, authentication 
-bypass, cryptographic attacks, authentication flaws, etc. </li>
-<li>Skilled using Burp Suite, Gobuster, NMAP, Dirbuster, Nessus, and SQLMap for web application penetration 
-tests and infrastructure testing. </li>
-<li>Produced detailed, audit-ready VAPT reports with proof-of-concept (PoC), risk ratings 
-(Critical/High/Medium/Low), and actionable remediation guidance, aligned with OWASP Top 10 and risk-based 
-prioritization.</li>
-        </ul>
+    </div></section>
+
+    <section id="expertise"><div class="wrap">
+      <div class="section-head"><div><div class="section-kicker">Core capabilities</div><h2>Areas of expertise</h2></div><p>Testing scope and methods are selected according to authorization, engagement requirements, and the target environment.</p></div>
+      <div class="grid three">
+        <article class="card"><div class="icon-box"><i class="fa-solid fa-globe"></i></div><h3>Web application security</h3><p>OWASP Top 10, authentication and session management, authorization and access control, business logic, input validation, and security misconfiguration.</p></article>
+        <article class="card"><div class="icon-box"><i class="fa-solid fa-code"></i></div><h3>API security</h3><p>Access control and object-level authorization, authentication flows, input handling, business logic, and API security control validation.</p></article>
+        <article class="card"><div class="icon-box"><i class="fa-solid fa-network-wired"></i></div><h3>Network &amp; infrastructure</h3><p>Internal and external assessments, service exposure, vulnerability validation, firewall rules, network segmentation, and privilege escalation scenarios.</p></article>
+        <article class="card"><div class="icon-box"><i class="fa-brands fa-android"></i></div><h3>Android security</h3><p>Android application testing, runtime analysis, Frida-based instrumentation, root-detection assessment, and application security control review.</p></article>
+        <article class="card"><div class="icon-box"><i class="fa-solid fa-industry"></i></div><h3>OT/IT &amp; ICS environments</h3><p>Security assessment exposure across OT-integrated systems, enterprise networks, segmentation controls, and OT/SCADA security fundamentals.</p></article>
+        <article class="card"><div class="icon-box"><i class="fa-solid fa-clipboard-check"></i></div><h3>Risk &amp; remediation</h3><p>CVSS-based prioritization, PoC evidence, audit-ready reporting, remediation recommendations, revalidation, and retesting.</p></article>
       </div>
-      <div class="job">
-        <h3>Cyber Security Analyst – Riskberg Consulting Pvt. Ltd (Gurgaon, 09/2023 – 08/2024)</h3>
-        <ul>
-          <li> Performed manual and automated Vulnerability Assessment & Penetration Testing (VA/PT) on multiple client web 
-applications, ensuring comprehensive coverage and timely delivery.</li>
-          <li> Managed on-site VAPT engagements for a client over an extended period, overseeing end-to-end testing activities 
-and acting as the primary point of contact for coordination and communication. </li>
-          <li>Executed internal penetration tests on clients’ in-house applications to identify and address security 
-vulnerabilities within their internal network.</li>
-<li> Identified, validated, and classified vulnerabilities using risk-based severity ratings (Critical, High, Medium, Low), 
-supported by clear proof-of-concept (PoC) evidence. </li>
-<li>Collaborated closely with development and engineering teams to validate fixes, support remediation efforts, and 
-improve overall security posture.</li>
-<li>
-  Proficient in understanding application-level vulnerabilities like XSS, SQL Injection, CSRF, authentication 
-bypass, cryptographic attacks, authentication flaws, etc. 
-</li>
-        </ul>
+      <div class="card" style="margin-top:16px"><h3>Tools &amp; standards</h3><div class="skills"><span class="skill">Burp Suite</span><span class="skill">Nmap</span><span class="skill">Tenable Nessus</span><span class="skill">SQLMap</span><span class="skill">Gobuster</span><span class="skill">Dirsearch</span><span class="skill">Acunetix</span><span class="skill">Frida</span><span class="skill">OWASP Top 10</span><span class="skill">CVSS</span><span class="skill">CERT-In-aligned reporting</span><span class="skill">PoC development</span></div></div>
+    </div></section>
+
+    <section id="experience"><div class="wrap">
+      <div class="section-head"><div><div class="section-kicker">Career</div><h2>Professional experience</h2></div><p>Progressive experience in vulnerability assessment, penetration testing, client coordination, and remediation support.</p></div>
+      <div class="timeline">
+        <article class="role"><div class="role-top"><div><h3>VAPT Consultant</h3><div class="company">Dievas Technologies Pvt. Ltd. · Noida, Uttar Pradesh</div></div><span class="date">Aug 2025 – Present</span></div><ul>
+          <li>Lead end-to-end VAPT across web applications, APIs, internal infrastructure, and OT-integrated systems to identify exploitable weaknesses and attack paths.</li>
+          <li>Manage and coordinate OFFPST and OLPST engagements, including practical attack simulations and vulnerability exploitation aligned with engagement and compliance expectations.</li>
+          <li>Conduct network and internal penetration testing, including firewall-rule review, segmentation validation, credential-based attack scenarios, and privilege-escalation testing.</li>
+          <li>Prepare audit-ready reports with CVSS-based risk ratings, reproducible PoCs, business and technical impact, and actionable remediation guidance.</li>
+          <li>Act as a VAPT point of contact, coordinating with clients and technical teams on findings, remediation validation, and retesting.</li>
+        </ul></article>
+        <article class="role"><div class="role-top"><div><h3>VAPT Specialist</h3><div class="company">Dievas Technologies Pvt. Ltd. · Noida, Uttar Pradesh</div></div><span class="date">Oct 2024 – Aug 2025</span></div><ul>
+          <li>Performed manual and automated VAPT on web applications, focusing on authentication, authorization, access control, session management, input validation, and application security controls.</li>
+          <li>Manually validated OWASP Top 10 and infrastructure findings, including XSS, SQL injection, IDOR, authentication bypass, and security misconfigurations.</li>
+          <li>Configured authenticated and unauthenticated Tenable Nessus scans to identify vulnerabilities, missing patches, insecure configurations, and exposed services.</li>
+          <li>Validated scanner findings to distinguish genuine vulnerabilities from false positives and support risk-based remediation and retesting.</li>
+          <li>Produced detailed VAPT reports with severity ratings, PoC evidence, and actionable remediation recommendations.</li>
+        </ul></article>
+        <article class="role"><div class="role-top"><div><h3>Cyber Security Analyst</h3><div class="company">Riskberg Consulting Pvt. Ltd. · Gurugram, Haryana</div></div><span class="date">Sep 2023 – Aug 2024</span></div><ul>
+          <li>Conducted manual and automated VAPT on multiple client web applications, ensuring broad test coverage and delivery within engagement timelines.</li>
+          <li>Managed on-site VAPT activities for a client, coordinating test execution, communication, and engagement progress.</li>
+          <li>Performed internal penetration testing on client applications and enterprise network environments to identify security weaknesses.</li>
+          <li>Validated and classified findings by severity, supported by PoC evidence, and collaborated with engineering teams on remediation and retesting.</li>
+        </ul></article>
       </div>
-    </section>
+    </div></section>
 
-    <section>
-      <h2>🎓 Education</h2>
-      <ul>
-        <li><strong>M.C.A</strong> – Lovely Professional University (2021–2023)</li>
-        <li><strong>B.C.A</strong> – University of Lucknow  (2018–2021)</li>
-      </ul>
-    </section>
+    <section id="achievements"><div class="wrap">
+      <div class="section-head"><div><div class="section-kicker">Recognition</div><h2>Achievements</h2></div></div>
+      <article class="card achievement"><div class="icon-box"><i class="fa-solid fa-award"></i></div><div><h3>NASA Vulnerability Disclosure Program (VDP)</h3><p><strong>Official appreciation letter received.</strong> Recognized by NASA for responsibly identifying and reporting a previously unknown vulnerability, contributing to the security of its digital assets. The appreciation letter is referenced in the portfolio source as <code>VDP20of20-20Signed.pdf</code>; keep that file beside this HTML page if you want to link it here.</p><div class="actions"><a class="btn secondary" href="VDP20of20-20Signed.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-pdf"></i> View appreciation letter</a></div></div></article>
+    </div></section>
 
-    <section>
-      <h2>📜 Certifications</h2>
-      <div class="cert"><strong>Certified Ethical Hacker (Practical)</strong><span>ID: ECC2386741059 · Valid: Apr 2024 – Apr 2027</span></div>
-      <section>
-  <h2>📄 Certified Ethical Hacker (Practical)</h2>
-  <p>You can view or scroll the PDF here:</p>
-  <object
-    id="nasa-vdp-pdf"
-    data="cehPratical.pdf"
-    type="application/pdf"
-    width="100%"
-    height="600px">
-    <p>
-      Your browser does not support PDFs.
-      <a href="cehPratical.pdf">Download the PDF</a>.
-    </p>
-  </object>
-</section>
-      
-       <section>
-      <div class="cert"><strong>CCNA - Cisco Certified Network Associate</strong><span>ID: CSCO14953614 · Valid: Jul 2025 – Jul 2028</span></div>
-      <section>
-  <h2>📄 CCNA - Cisco Certified Network Associate</h2>
-  <p>You can view or scroll the PDF here:</p>
-  <object
-    id="nasa-vdp-pdf"
-    data="ccna.pdf"
-    type="application/pdf"
-    width="100%"
-    height="600px">
-    <p>
-      Your browser does not support PDFs.
-      <a href="ccna.pdf">Download the PDF</a>.
-    </p>
-  </object>
-</section>
-     
-</section>
+    <section id="certifications"><div class="wrap">
+      <div class="section-head"><div><div class="section-kicker">Credentials</div><h2>Certifications &amp; learning</h2></div><p>Credentials listed from the supplied resume and portfolio. Certificate links work when the corresponding PDF files are placed beside this HTML file.</p></div>
+      <div class="grid two">
+        <article class="card cert-card"><div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div><div><h3>Certified Ethical Hacker (Practical)</h3><p>EC-Council</p><div class="meta">Apr 2024 – Apr 2027 · Credential ID: ECC2386741059</div><div class="actions"><a class="btn secondary" href="cehPratical.pdf" target="_blank" rel="noopener">View certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></article>
+        <article class="card cert-card"><div class="icon-box"><i class="fa-solid fa-network-wired"></i></div><div><h3>CCNA — Cisco Certified Network Associate</h3><p>Cisco</p><div class="meta">Jul 2025 – Jul 2028 · Credential ID: CSCO14953614</div><div class="actions"><a class="btn secondary" href="ccna.pdf" target="_blank" rel="noopener">View certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></article>
+        <article class="card cert-card"><div class="icon-box"><i class="fa-solid fa-lock"></i></div><div><h3>Certified Network Security Practitioner (CNSP)</h3><p>The SecOps Group</p><div class="meta">Issued Jun 2024 · Credential ID: 8813850</div></div></article>
+        <article class="card cert-card"><div class="icon-box"><i class="fa-solid fa-microchip"></i></div><div><h3>Additional professional development</h3><p>OT/ICS cybersecurity fundamentals, SCADA security concepts, and practical cybersecurity labs.</p><div class="meta">Include additional credentials only when you want to publish the supporting certificate details.</div></div></article>
+      </div>
+    </div></section>
 
-    <section>
-      <h2>🛠️ Skills</h2>
-      <ul>
-        <li><strong>Vulnerability Assessment & Penetration Testing: </strong>Web Applications, Mobile Applications, APIs, Network Infrastructure</li>
-        <li><strong>Tools:</strong> Nessus, Burp Suite, Acunetix, Nmap, Gobuster, SQLMap</li>
-        <li><strong>Standards:</strong> OWASP Top 10, CVSS, PoC Reporting, Auditor Evidence</li>
-        <li><strong>Soft Skills:</strong> Presentation, Problem Solving, Teamwork, Adaptability</li>
-      </ul>
-    </section>
+    <section id="education"><div class="wrap">
+      <div class="section-head"><div><div class="section-kicker">Education</div><h2>Academic background</h2></div></div>
+      <div class="card">
+        <div class="education-item"><div><h3>Master of Computer Applications (MCA)</h3><p>Lovely Professional University, Phagwara</p><p>CGPA: 7.4</p></div><span class="year">2021 – 2023</span></div>
+        <div class="education-item"><div><h3>Bachelor of Computer Applications (BCA)</h3><p>University of Lucknow, Lucknow</p><p>Percentage: 69.1%</p></div><span class="year">2018 – 2021</span></div>
+        <div class="education-item"><div><h3>Certificate of Paper Presentation</h3><p>“Comparative Analysis of Cryptographic Algorithms in Computer Networks”</p></div><span class="year">May 2023</span></div>
+      </div>
+    </div></section>
+
+    <section id="contact"><div class="wrap"><div class="contact-panel"><div><div class="section-kicker">Get in touch</div><h2 style="margin-top:7px">Let’s talk security.</h2><p>For cybersecurity opportunities, VAPT engagements, and professional networking.</p></div><div class="contact-links"><a class="btn primary" href="mailto:ankitsoni6153@gmail.com"><i class="fa-regular fa-envelope"></i> Email me</a><a class="btn secondary" href="https://linkedin.com/in/ankit-k-soni" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> Connect on LinkedIn</a></div></div></div></section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Ankit Kumar Soni</p>
-  </footer>
-
-  <script>
-    const title = document.querySelector('header h1');
-    const text = title.textContent;
-    title.textContent = '';
-    let index = 0;
-    function typeWriter() {
-      if (index < text.length) {
-        title.textContent += text.charAt(index);
-        index++;
-        setTimeout(typeWriter, 80);
-      }
-    }
-    document.addEventListener('DOMContentLoaded', typeWriter);
-  </script>
+  <footer><div class="wrap footer-inner"><span>© <span id="year"></span> Ankit Kumar Soni · Cybersecurity Portfolio</span><div class="socials"><a href="mailto:ankitsoni6153@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i> Email</a><a href="https://linkedin.com/in/ankit-k-soni" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></div></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
-
-
